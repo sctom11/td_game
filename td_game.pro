@@ -1,0 +1,57 @@
+QT       += core gui
+
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+CONFIG += c++11
+
+# You can make your code fail to compile if it uses deprecated APIs.
+# In order to do so, uncomment the following line.
+#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
+
+SOURCES += \
+    GameMap.cpp \
+    Player.cpp \
+    Enemy/enemy.cpp \
+    Enemy/Armour.cpp \
+    Enemy/Scout.cpp \
+    Enemy/Warmachine.cpp \
+    main.cpp \
+    Tower/Tower.cpp \
+    Tower/Arrow.cpp \
+    Tower/Cannon.cpp \
+    Tower/Wizard.cpp \
+    clickableview.cpp \
+    mainwindow.cpp \
+    myMessagebox.cpp
+
+HEADERS += \
+    GameMap.h \
+    Player.h \
+    Enemy/enemy.h \
+    Enemy/Armour.h \
+    Enemy/Scout.h \
+    Enemy/Warmachine.h \
+    Tower/Tower.h \
+    Tower/Arrow.h \
+    Tower/Cannon.h \
+    Tower/Wizard.h \
+    clickableview.h \
+    mainwindow.h \
+    myMessagebox.h
+
+FORMS += \
+    mainwindow.ui
+
+# Default rules for deployment.
+qnx: target.path = /tmp/$${TARGET}/bin
+else: unix:!android: target.path = /opt/$${TARGET}/bin
+!isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    assets.qrc
+
+DISTFILES += \
+    map_images/blocked.png \
+    map_images/path.png \
+    map_images/space.png
