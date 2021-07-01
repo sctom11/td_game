@@ -1,6 +1,6 @@
-# td_game
+# Tower Defense Game
 
-This is a mini Tower Defense game made using C++ language with Qt GUI library<br>
+This is a mini Tower Defense game made with C++ and Qt GUI library<br>
 <br>
 Please read this documentation for the details of the game, as well as the source code:<br>
 [TD Game Description](td_game_description.pdf)<br>
